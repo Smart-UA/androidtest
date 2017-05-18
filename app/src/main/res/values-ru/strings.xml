@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loginText">Авторизируйтесь, пожалуйста:</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Пароль</string>
+    <string name="loginButton">Войти</string>
+    <string name="registerButton">Зарегистрироваться</string>
+    <string name="PasswordAgain">Повторите пароль</string>
+    <string name="registerText">Зарегистрируйтесь, пожалуйста:</string>
+    <string name="logoutButton">Выйти</string>
+    <string name="aboutText">Вы вошли как:</string>
+</resources>
