@@ -27,9 +27,6 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
         registerLogin = (EditText) findViewById(R.id.registerEmail);
         registerLogin.setText(getIntent().getExtras().getString("Login"));
 
-        registerPassword = (EditText) findViewById(R.id.loginPassword);
-        registerPasswordCheck = (EditText) findViewById(R.id.registerPasswordCheck);
-
         btnRegister = (Button) findViewById(R.id.registerButtonRegister);
         btnRegister.setOnClickListener(this);
 
@@ -39,10 +36,14 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
+        registerPassword = (EditText) findViewById(R.id.loginPassword);
+        registerPasswordCheck = (EditText) findViewById(R.id.registerPasswordCheck);
+
         Intent loginIntent = new Intent();
         loginIntent.putExtra("Login", registerLogin.getText().toString());
         Boolean isValid = EmailValidator.isValid(registerLogin.getText().toString());
-        Boolean isMatch = registerPassword.equals(registerPasswordCheck);
+        Boolean isMatch = registerPassword.getText().toString().equals(registerPasswordCheck.getText().toString());
         if (!isValid) {
             showToast(wrongEmail);
         } else {
@@ -51,7 +52,6 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
             } else {
                 DatabaseHandler.getInstance(this).addAccount(new Account(registerLogin.getText().toString(), registerPassword.toString()));
             }
-
         }
         setResult(RESULT_OK, loginIntent);
         finish();
