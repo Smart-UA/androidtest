@@ -9,4 +9,6 @@
     <string name="registerText">Зарєструйтесь, будь ласка:</string>
     <string name="logoutButton">Вийти</string>
     <string name="aboutText">Ви увійшли як:</string>
+    <string name="errorPasswordNotCorrect">Помилка: Невірний логін та/або пароль!</string>
+    <string name="errorPasswordsNotMatch">Помилка: Введені паролі не співпадають!</string>
 </resources>

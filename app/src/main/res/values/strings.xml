@@ -2,11 +2,13 @@
     <string name="app_name" translatable="false">AndroidTest</string>
     <string name="loginText">Sign in :</string>
     <string name="Email">E-mail</string>
-    <string name="password">Password</string>
     <string name="loginButton">Login</string>
     <string name="registerButton">Register</string>
-    <string name="passwordAgain">Password again</string>
     <string name="registerText">Register :</string>
     <string name="logoutButton">Logout</string>
     <string name="aboutText">You are logged as :</string>
+    <string name="Password">Password</string>
+    <string name="PasswordAgain">Repeat password</string>
+    <string name="errorPasswordsNotMatch">Error: Passwords do not match!</string>
+    <string name="errorPasswordNotCorrect">Error: Incorrect login and/or password!</string>
 </resources>
