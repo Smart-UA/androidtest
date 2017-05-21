@@ -11,4 +11,5 @@
     <string name="aboutText">Вы вошли как:</string>
     <string name="errorPasswordNotCorrect">Ошибка: Неверный логин и/или пароль!</string>
     <string name="errorPasswordsNotMatch">Ошибка: Введённые пароли не совпадают!</string>
+    <string name="errorMailNotValid">Ошибка: Email указан неверно!</string>
 </resources>

@@ -11,4 +11,5 @@
     <string name="PasswordAgain">Repeat password</string>
     <string name="errorPasswordsNotMatch">Error: Passwords do not match!</string>
     <string name="errorPasswordNotCorrect">Error: Incorrect login and/or password!</string>
+    <string name="errorMailNotValid">Error: Email is not valid!</string>
 </resources>

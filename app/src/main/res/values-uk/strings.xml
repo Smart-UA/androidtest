@@ -11,4 +11,5 @@
     <string name="aboutText">Ви увійшли як:</string>
     <string name="errorPasswordNotCorrect">Помилка: Невірний логін та/або пароль!</string>
     <string name="errorPasswordsNotMatch">Помилка: Введені паролі не співпадають!</string>
+    <string name="errorMailNotValid">Помилка: Email вказано невірно!</string>
 </resources>

@@ -15,10 +15,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     static final private int login = 0;
     private Button btnLogin;
     private Button btnRegister;
-    EmailValidator chechTheMail;
-    String hello = getResources().getString(R.string.app_name);
-    String wrongPassword = getResources().getString(R.string.errorPasswordNotCorrect);
-    String passwordsNotMatch = getResources().getString(R.string.errorPasswordsNotMatch);
+    private EmailValidator chechTheMail;
+    private String wrongPassword;
+    private String passwordsNotMatch;
 
     /**
      * Called when the activity is first created.
@@ -32,6 +31,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnRegister = (Button) findViewById(R.id.loginButtonRegister);
         btnLogin.setOnClickListener(this);
         btnRegister.setOnClickListener(this);
+        wrongPassword = getString(R.string.errorPasswordNotCorrect);
+        passwordsNotMatch = getString(R.string.errorPasswordsNotMatch);
     }
 
     @Override
